@@ -2,7 +2,7 @@
 footer {
     background-color: black; /* Définir la couleur de fond en noir */
     color: white; /* Définir la couleur du texte en blanc */
-    padding: 20px; /* Ajouter du padding si nécessaire */
+    padding: 29px; /* Ajouter du padding si nécessaire */
   }
   
   .logo {
@@ -10,9 +10,14 @@ footer {
     flex-direction: column;
     align-items: center; /* Centrer horizontalement */
     justify-content: center; /* Centrer verticalement */
+    
   }
   
   .footer-logo {
-    width: 20px; /* Ajustez la largeur de l'image selon vos besoins */
-    margin-bottom: 10px; /* Ajoutez de la marge en bas de l'image si nécessaire */
+    width: 122px; /* Ajustez la largeur de l'image selon vos besoins */
+    margin: 37px 0 30px; /* Ajoutez de la marge en bas de l'image si nécessaire */
+  }
+
+  .logo p {
+    font-size: 24px; /* Définir la taille du texte à 24px */
   }
