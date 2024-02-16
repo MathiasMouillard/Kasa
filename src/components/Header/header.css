@@ -5,11 +5,6 @@ header {
     padding: 45px 100px; /* Ajoutez du padding si nécessaire */
   }
   
-  .header-logo {
-    width: 200px; /* Ajuster la largeur de l'image */
-    height: auto; /* Ajuster automatiquement la hauteur en fonction de la largeur */
-  }
-  
   nav {
     margin-left: auto;
   }
