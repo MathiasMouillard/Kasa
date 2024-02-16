@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 100px; /* Ajoutez du padding si nécessaire */
+  }
+  
+  .logo img {
+    width: 200px; /* Ajuster la largeur de l'image */
+    height: auto; /* Ajuster automatiquement la hauteur en fonction de la largeur */
+  }
+  
+  nav {
+    margin-left: auto;
+  }
+
+  nav ul {
+    list-style: none; /* Pour supprimer les points de liste */
+    padding: 0; /* Pour enlever tout espace supplémentaire */
+    margin: 0; /* Pour enlever tout espace supplémentaire */
+    display: flex; /* Pour afficher les éléments en ligne */
+  }
+
+  nav ul li {
+    margin-right: 40px; /* Ajoutez de la marge entre les éléments si nécessaire */
+  }
+
+  nav ul li:last-child {
+    margin-right: 0; /* Pour supprimer la marge du dernier élément */
+  }
+
+  nav ul li a {
+    color: black;
+    text-decoration: none; /* Pour supprimer le soulignement */
+    font-size: 24px; /* taille texte*/
+  }
+
+  nav ul li a.active {
+    text-decoration: underline; /* Soulignement pour les liens actifs */
+  }
