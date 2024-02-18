@@ -1,0 +1,58 @@
+.rental-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: 0 auto
+}
+  .cover-image {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.rental-location {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.rental-localisation h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.rental-localisation span {
+    font-weight: bold;
+}
+.rental-tags {
+    margin-top: 20px;
+}
+
+
+.rental-host-info {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 21px;
+}
+.rental-host {
+    display: flex;
+    flex-direction: column;
+}
+.rental-host-info span {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.rental-host-info img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+.rental-rating img {
+    margin-left: 20px;
+}
+
+.rental-collapse {
+    display: flex;
+    gap: 80px;
+}

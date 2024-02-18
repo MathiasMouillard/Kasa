@@ -8,6 +8,7 @@ const About = () => {
   return (
     <div>
       <Banner image={imgMontagne} showText={false} />
+      <div className="about-collapse-container">
       <CustomCollapse title="Fiabilité" id="collapse1">
         Les annonces postées sur Kasa garantissent une fiabilité totale. Les
         photos sont conformes aux logements, et toutes les informations sont
@@ -31,6 +32,7 @@ const About = () => {
         bien respectés. Nous organisons également des ateliers sur la sécurité
         domestique pour nos hôtes.
       </CustomCollapse>
+      </div>
     </div>
   );
 };
