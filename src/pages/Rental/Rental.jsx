@@ -6,6 +6,7 @@ import Tag from "../../components/Tag/Tag";
 import rentalData from "../../data/rentalData.json";
 import StarRated from "../../assets/icons/Star_rated.png";
 import StarUnrated from "../../assets/icons/Star_unrated.png";
+import Carousel from "../../components/Carousel/Carousel";
 
 const Rental = () => {
   const { id } = useParams();
@@ -31,9 +32,7 @@ const Rental = () => {
 
   return (
     <div className="rental-content">
-      <div className="cover-image-container">
-        <img src={rental.cover} alt={rental.title} className="cover-image" />
-      </div>
+     <Carousel images={rental.pictures} />
       <div className="rental-location">
         <div className="rental-localisation">
           <h2>{rental.title}</h2>
