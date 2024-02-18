@@ -10,7 +10,6 @@ const Home = () => {
   const [rentals, setRentals] = useState([]);
 
   useEffect(() => {
-    // Charger les données à partir du fichier JSON
     setRentals(rentalData);
   }, []);
 

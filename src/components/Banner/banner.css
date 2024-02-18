@@ -1,11 +1,12 @@
 /* Banner.css */
 .banner-container {
-  margin: 0 100px 45px 100px;
+  margin: 0 auto 45px;
   position: relative;
+  max-width: 1240px;
 }
 
 .banner-image {
-  height: 223px; /* Ajustez la taille selon vos besoins */
+  height: 223px;
   background-size: cover;
   background-position: center;
   border-radius: 25px;
@@ -20,7 +21,7 @@
   border-radius: 25px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Opacité noire à 60% */
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .banner-text {

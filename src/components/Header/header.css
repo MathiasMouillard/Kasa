@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 45px 100px; /* Ajoutez du padding si nécessaire */
+    padding: 45px 100px;
   }
   
   nav {
@@ -10,26 +10,26 @@ header {
   }
 
   nav ul {
-    list-style: none; /* Pour supprimer les points de liste */
-    padding: 0; /* Pour enlever tout espace supplémentaire */
-    margin: 0; /* Pour enlever tout espace supplémentaire */
-    display: flex; /* Pour afficher les éléments en ligne */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
   }
 
   nav ul li {
-    margin-right: 40px; /* Ajoutez de la marge entre les éléments si nécessaire */
+    margin-right: 40px;
   }
 
   nav ul li:last-child {
-    margin-right: 0; /* Pour supprimer la marge du dernier élément */
+    margin-right: 0; 
   }
 
   nav ul li a {
     color: black;
-    text-decoration: none; /* Pour supprimer le soulignement */
-    font-size: 24px; /* taille texte*/
+    text-decoration: none;
+    font-size: 24px;
   }
 
   nav ul li a.active {
-    text-decoration: underline; /* Soulignement pour les liens actifs */
+    text-decoration: underline;
   }
