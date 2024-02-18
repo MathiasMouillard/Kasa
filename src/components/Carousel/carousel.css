@@ -1,6 +1,10 @@
 .carousel-container {
     position: relative;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
   
   .carousel-image {
     width: 100%;
@@ -26,4 +30,10 @@
   .right-arrow {
     right: 25px; 
   }
-  
+  .image-counter {
+    position: absolute;
+    bottom: 50px;
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+  }

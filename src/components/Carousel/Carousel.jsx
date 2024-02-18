@@ -8,7 +8,6 @@ function Carousel({ images }) {
   const totalImages = images.length;
 
   useEffect(() => {
-    // Reset currentIndex when images change
     setCurrentIndex(0);
   }, [images]);
 
