@@ -38,7 +38,9 @@
     display: flex;
     flex-direction: column;
 }
-.rental-host-info span {
+.rental-host-info span { 
+    display: flex;
+    justify-content: flex-end;
     color: var(--primary-color);
     margin-right: 10px;
 }

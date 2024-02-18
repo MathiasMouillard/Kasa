@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import "./rental.css";
 import CustomCollapse from "../../components/Collapse/Collapse";
 import Tag from "../../components/Tag/Tag";
@@ -12,7 +12,7 @@ const Rental = () => {
   const rental = rentalData.find((rental) => rental.id === id);
 
   if (!rental) {
-    return <div>Location introuvable</div>;
+    return <Navigate to="/Error" />;
   }
 
   const renderStars = (rating) => {
@@ -56,10 +56,10 @@ const Rental = () => {
         </div>
       </div>
       <div className="rental-collapse">
-        <CustomCollapse title="Description" id="description">
+        <CustomCollapse title="Description" id={`description_${id}`}>
           <span>{rental.description}</span>
         </CustomCollapse>
-        <CustomCollapse title="Equipments" id="equipments">
+        <CustomCollapse title="Equipments" id={`equipments_${id}`}>
           <ul>
             {rental.equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>
