@@ -8,7 +8,7 @@ const CustomCollapse = ({ title, children, icon, id }) => {
 
   const toggleCollapse = () => {
     setOpen(!open);
-    setRotate(!rotate); // Inverse l'état de rotation
+    setRotate(!rotate);
   };
 
   useEffect(() => {
@@ -24,25 +24,25 @@ const CustomCollapse = ({ title, children, icon, id }) => {
 
   return (
     <div className="collapse-container">
-      <div className="collapse-style">
+      <div className="collapse-style" onClick={toggleCollapse}>
         <h2>{title}</h2>
         {icon ? (
           <img
             src={icon}
             alt="Icone de flèche"
-            className={`rotate ${rotate ? "down" : ""}`}
-            onClick={toggleCollapse}
+            className={`arrow-icon ${rotate ? "down" : ""}`}
           />
         ) : (
           <img
             src={arrowIcon}
             alt="Icone de flèche"
-            className={`rotate ${rotate ? "down" : ""}`}
-            onClick={toggleCollapse}
+            className={`arrow-icon ${rotate ? "down" : ""}`}
           />
         )}
       </div>
-      {open && <div className="collapse-content">{children}</div>}
+      <div className={`collapse-content ${open ? "open" : ""}`}>
+        <div className="content-inner">{children}</div>
+      </div>
     </div>
   );
 };
