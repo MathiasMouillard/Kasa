@@ -1,0 +1,22 @@
+.collapse-style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.collapse-style h2 {
+    color: white;
+}
+
+.collapse-content {
+    background-color: #F6F6F6;
+}
+
+.rotate {
+    transition: transform 0.3s ease; /* Durée et fonction de transition */
+}
+  
+.rotate.down {
+    transform: rotate(-180deg); /* Rotation de 180 degrés */
+}

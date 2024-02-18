@@ -14,7 +14,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home-content">
       <Banner
         image={imgLittoral}
         text="Chez vous, partout et ailleurs"
