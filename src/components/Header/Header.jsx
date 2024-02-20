@@ -2,6 +2,10 @@ import { NavLink } from "react-router-dom";
 import "./header.css";
 import Logo from "../../assets/images/LOGO.svg";
 
+/**
+ * Composant représentant l'en-tête de l'application.
+ */
+
 function Header() {
   return (
     <header>

@@ -1,6 +1,10 @@
 import "./footer.css";
 import Logo from "../../assets/images/Logo_footer.png";
 
+/**
+ * Composant représentant le pied de page de l'application.
+ */
+
 function Footer() {
   return (
     <footer>
