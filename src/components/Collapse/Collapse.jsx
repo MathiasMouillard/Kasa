@@ -4,7 +4,10 @@ import arrowIcon from "../../assets/icons/Vector_top.png";
 
 const CustomCollapse = ({ title, children, icon, id }) => {
   const [open, setOpen] = useState(false);
-  const [rotate, setRotate] = useState(false);
+  const [rotate, setRotate] = useState(() => {
+    const storedState = localStorage.getItem(`collapse_${id}`);
+    return storedState ? JSON.parse(storedState) : false;
+  });
 
   const toggleCollapse = () => {
     setOpen(!open);
@@ -23,7 +26,7 @@ const CustomCollapse = ({ title, children, icon, id }) => {
   }, [open, id]);
 
   return (
-    <div className="collapse-container">
+    <div className="collapse-container about-collapse">
       <div className="collapse-style" onClick={toggleCollapse}>
         <h2>{title}</h2>
         {icon ? (

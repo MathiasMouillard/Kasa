@@ -2,6 +2,11 @@
     margin-bottom: 30px;
 }
 
+.about-collapse {
+    width: 71%;
+    margin: 30px auto;  
+}
+
 .collapse-style {
     display: flex;
     justify-content: space-between;

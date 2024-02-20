@@ -8,6 +8,11 @@ import StarRated from "../../assets/icons/Star_rated.png";
 import StarUnrated from "../../assets/icons/Star_unrated.png";
 import Carousel from "../../components/Carousel/Carousel";
 
+/**
+ * Page représentant les détails d'une location.
+ * @param {number} rating - La note de la location
+ */
+
 const Rental = () => {
   const { id } = useParams();
   const rental = rentalData.find((rental) => rental.id === id);
@@ -32,10 +37,10 @@ const Rental = () => {
 
   return (
     <div className="rental-content">
-     <Carousel images={rental.pictures} />
+      <Carousel images={rental.pictures} />
       <div className="rental-location">
         <div className="rental-localisation">
-          <h2>{rental.title}</h2>
+          <h1>{rental.title}</h1>
           <span>{rental.location}</span>
           <div className="rental-tags">
             {rental.tags.map((tag, index) => (
@@ -59,7 +64,7 @@ const Rental = () => {
           <span>{rental.description}</span>
         </CustomCollapse>
         <CustomCollapse title="Equipments" id={`equipments_${id}`}>
-          <ul>
+          <ul className="equipment-list">
             {rental.equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>
             ))}

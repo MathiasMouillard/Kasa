@@ -31,5 +31,16 @@ header {
   }
 
   nav ul li a.active {
-    text-decoration: underline;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px; 
+    width: 100%;
+    height: 1px;
+    background-color: black;
   }

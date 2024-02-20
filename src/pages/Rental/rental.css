@@ -11,17 +11,14 @@
     justify-content: space-between;
     margin-bottom: 24px;
 }
-.rental-localisation h2 {
+.rental-localisation h1 {
     color: var(--primary-color);
     margin-bottom: 10px;
-}
-.rental-localisation span {
-    font-weight: bold;
+    font-weight: 500;
 }
 .rental-tags {
     margin-top: 20px;
 }
-
 
 .rental-host-info {
     display: flex;
@@ -52,4 +49,8 @@
 .rental-collapse {
     display: flex;
     gap: 80px;
+}
+
+.equipment-list {
+    list-style-type: none;
 }
