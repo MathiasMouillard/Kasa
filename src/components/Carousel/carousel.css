@@ -30,10 +30,35 @@
   .right-arrow {
     right: 25px; 
   }
+
   .image-counter {
     position: absolute;
     bottom: 50px;
     background-color: transparent;
     color: white;
     padding: 5px 10px;
+    display: block
   }
+
+
+  @media only screen and (max-width: 376px) {
+    .carousel-image {
+      width: 335px;
+      height: 255px;
+    }
+    .arrow-button img {
+      width: 12px;
+      height: 20px;
+    }
+    .left-arrow {
+      left: 6px; 
+    }
+    
+    .right-arrow {
+      right: 6px; 
+    }
+    .image-counter {
+      display: none;
+    }
+  
+}

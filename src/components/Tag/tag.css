@@ -1,11 +1,23 @@
 .tag {
-    display: inline-block;  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
     font-size: 14px;
     font-weight: 700;
     color: white;
-    padding: 5px 10px;
+    width: 115px;
+    height: 25px;
     border-radius: 20px;
     background-color: var(--primary-color);
-    margin-right: 5px;  
+    margin-right: 5px;
+    text-align: center;
 }
 
+@media only screen and (max-width: 376px) {
+    .tag {
+        font-size: 10px;
+        width: 84px;
+        height: 18px;    
+        border-radius: 10px;
+    }
+}

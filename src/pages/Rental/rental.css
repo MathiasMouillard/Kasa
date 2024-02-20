@@ -16,7 +16,8 @@
     margin-bottom: 10px;
     font-weight: 500;
 }
-.rental-tags {
+.rental-tags {  
+    display: flex;
     margin-top: 20px;
 }
 
@@ -53,4 +54,43 @@
 
 .equipment-list {
     list-style-type: none;
+}
+
+
+@media only screen and (max-width: 376px) {
+    .rental-content {
+        margin: auto 20px;
+    }
+    .rental-location {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .rental-localisation {
+        margin-bottom: 20px;
+    }
+    .rental-localisation h1 {
+        font-size: 18px;
+    }
+    .rental-localisation span {
+        font-size: 14px;
+    }
+    .host-rating {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .rental-collapse {
+        display: block;
+    }
+    .rental-rating img {
+        margin: 0 5px 0 0;
+        width: 20px;
+    }
+    .rental-host-info {
+        margin-bottom: 0;
+    }
+    .host-rating {
+        justify-content: space-between;
+        align-items: center;
+    }
 }

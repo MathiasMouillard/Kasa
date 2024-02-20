@@ -1,6 +1,6 @@
 .error-container {
     text-align: center;
-    padding: 20px 0 130px 0;
+    padding: 85px 0 130px 0;
   }
   .error-container > * {
     margin-bottom: 130px;
@@ -18,4 +18,27 @@
   
   .error-container a {
     color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
   }
+
+
+
+  @media only screen and (max-width: 376px) {
+    .error-container {
+      text-align: center;
+      padding: 86px 0 113px 0;
+    }
+    .error-container > * {
+      margin-bottom: 113px;
+    }
+    .error-container h1 {
+      font-size: 96px;
+    }  
+    .error-container p {
+      font-size: 18px;
+    }
+    .error-container a {
+      font-size: 14px;
+    }
+}

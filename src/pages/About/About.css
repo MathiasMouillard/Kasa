@@ -28,6 +28,13 @@
     transition: max-height 0.8s ease-in-out;  
 }
 .content-inner {
-    padding: 10px 20px 10px 15px;
+    padding: 16px 20px 20px 20px;
 }
 
+
+@media only screen and (max-width: 376px) {
+    .content-inner {
+        font-size: 12px;
+        padding: 13px 20px 16px 20px;
+    }   
+}

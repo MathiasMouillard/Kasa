@@ -30,3 +30,11 @@
 .rotate.down {
     transform: rotate(-180deg); /* Rotation de 180 degrés */
 }
+
+
+@media only screen and (max-width: 376px) {
+    .about-collapse {
+        width: 100%;
+        margin: 20px auto;
+    }
+  }
