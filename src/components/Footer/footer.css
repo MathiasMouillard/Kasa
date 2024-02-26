@@ -1,8 +1,7 @@
-
 footer {
     background-color: black;
     color: white;
-    padding: 29px;
+    padding: 1.8125rem;
   }
   
   .logo {
@@ -14,26 +13,27 @@ footer {
   }
   
   .footer-logo {
-    width: 122px;
-    margin: 37px 0 30px;
+    width: 7.625rem;
+    margin: 1.40625rem 0 1.25rem;
   }
 
   .logo p {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
 
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: 375.9px) {
     footer {
-      padding: 29px 29px 58px 29px;
+      padding: 1.8125rem 1.8125rem 3.625rem 1.8125rem;
     }
     .footer-logo {
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
     .logo p {
       font-size: 12px;
-      margin: 0 110px;
+      margin: 0 6.875rem;
       display: flex;
       justify-content: center;
+      align-items: center;
     }
   }

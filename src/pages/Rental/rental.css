@@ -2,18 +2,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 1240px;
-    margin: 0 auto
+    max-width: 77.5rem;
+    margin: 0 auto;
 }
 
 .rental-location {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 .rental-localisation h1 {
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-weight: 500;
 }
 .rental-tags {  
@@ -39,8 +39,8 @@
 }
 .rental-host-info img {
     border-radius: 50%;
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     object-fit: cover;
 }
 .rental-rating img {
@@ -49,7 +49,7 @@
 
 .rental-collapse {
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .equipment-list {
@@ -57,23 +57,23 @@
 }
 
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 375.9px) {
     .rental-content {
-        margin: auto 20px;
+        margin: auto;
     }
     .rental-location {
         display: flex;
         flex-direction: column;
-        margin-bottom: 0;
+        margin: 0 1.25rem;
     }
     .rental-localisation {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
     .rental-localisation h1 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
     .rental-localisation span {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     .host-rating {
         display: flex;
@@ -83,11 +83,18 @@
         display: block;
     }
     .rental-rating img {
-        margin: 0 5px 0 0;
-        width: 20px;
+        margin: 0 0.325rem 0 0;
+        width: 0.813rem;
     }
     .rental-host-info {
         margin-bottom: 0;
+    }
+    .rental-host-info span { 
+        font-size: 0.75rem;
+    }
+    .rental-host-info img {
+        width: 2rem;
+        height: 2rem;
     }
     .host-rating {
         justify-content: space-between;

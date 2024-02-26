@@ -1,12 +1,12 @@
 .collapse-style {
-    height: 53px;
-    padding: 10px 20px 10px 15px;
+    height: 3.3125rem;
+    padding: 0.625rem 1.25rem 0.625rem 0.9375rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .collapse-style h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
 } 
 
 .arrow-icon {
@@ -24,17 +24,17 @@
 }
   
 .collapse-content.open {
-    max-height: 500px;
+    max-height: 31.25rem;
     transition: max-height 0.8s ease-in-out;  
 }
 .content-inner {
-    padding: 16px 20px 20px 20px;
+    padding: 1rem 1.25rem 1.25rem 1.25rem;
 }
 
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 375.9px) {
     .content-inner {
-        font-size: 12px;
-        padding: 13px 20px 16px 20px;
+        font-size: 0.75rem;
+        padding: 0.8125rem 1.25rem 1rem 1.25rem;
     }   
 }

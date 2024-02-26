@@ -1,44 +1,44 @@
 .error-container {
     text-align: center;
-    padding: 85px 0 130px 0;
+    padding: 5.3125rem 0 8.125rem 0;
   }
   .error-container > * {
-    margin-bottom: 130px;
+    margin-bottom: 8.125rem;
   }
   
   .error-container h1 {
-    font-size: 288px;
+    font-size: 18rem;
     color: var(--primary-color);
   }
   
   .error-container p {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--primary-color);
   }
   
   .error-container a {
     color: black;
     text-decoration: none;
-    border-bottom: 1px solid black;
+    border-bottom: 0.0625rem solid black;
   }
 
 
 
-  @media only screen and (max-width: 376px) {
+  @media only screen and (max-width: 375.9px) {
     .error-container {
       text-align: center;
-      padding: 86px 0 113px 0;
+      padding: 5.375rem 0 7.0625rem 0;
     }
     .error-container > * {
-      margin-bottom: 113px;
+      margin-bottom: 7.0625rem;
     }
     .error-container h1 {
-      font-size: 96px;
+      font-size: 6rem;
     }  
     .error-container p {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
     .error-container a {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 }
